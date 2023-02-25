@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 .button {
   outline: none;
@@ -10,32 +13,80 @@
   font-weight: 600;
   line-height: 22px;
   border-radius: 8px;
-  padding: 5px 20px;
+  padding: 8px 20px;
   background: transparent;
   border: 2px solid rgba(102, 134, 93, 0.277);
   background: -webkit-linear-gradient(180deg, #ffac00, #f2fe00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.button:hover {
+  border: 2px solid rgba(102, 134, 93, 0.425);
+  background: -webkit-linear-gradient(180deg, #f2fe00, #ffac00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button2 {
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 8px 20px;
+  background: rgba(255, 92, 247, 0.814);
+  border: 2px solid transparent;
+}
+.button2:hover {
+  background: transparent;
+  border: 2px solid rgba(255, 92, 247, 0.814);
+  background: -webkit-linear-gradient(180deg, #ca0ef9, #ff00d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pink {
+  color: rgba(255, 92, 247, 0.814);
+}
 
 /* TOP SECTION */
+/*  */
 #top-section {
-  height: auto;
+  height: 600px;
   width: 100%;
-  background: url(/images/hero-bg.jpg);
+  background: url(/images/hero-bg-4.jpg) no-repeat;
+  background-size: cover;
 }
-#top-section p {
+/* Navbar */
+.Navbar a {
   margin-bottom: 0;
   color: white;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
+  text-decoration: none;
 }
-#top-section h5 {
+.Navbar h5 {
   margin-bottom: 0;
   color: white;
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
+}
+/* Hero */
+#hero {
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero .hero-heading {
+  font-size: 52px;
+  color: rgb(226, 226, 226);
+}
+#hero .hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(137, 137, 137);
 }
 /* TOP SECTION ENDS HERE  */
