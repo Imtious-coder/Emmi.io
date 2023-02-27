@@ -13,6 +13,7 @@ a {
   --color-8797a7: #8797a7;
   --color-998d99: #998d99;
   --color-ff8af9cb: #ff8af9cb;
+  --color-2a0300cb: #2a0300cb;
 }
 
 .button {
@@ -82,17 +83,17 @@ a {
   line-height: 32px;
 }
 /* Hero */
-#hero {
+.hero-wrapper {
   height: 500px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#hero .hero-heading {
+.hero-wrapper .hero-heading {
   font-size: 52px;
   color: rgb(226, 226, 226);
 }
-#hero .hero-description {
+.hero-wrapper .hero-description {
   font-size: 16px;
   font-weight: 400;
   color: rgb(137, 137, 137);
@@ -118,3 +119,40 @@ a {
   color: var(--color-ff8af9cb);
 }
 /* DETAILS ENDS HERE */
+/* REGISTER */
+.register-wrapper h5 {
+  font-size: 42px;
+  font-weight: bolder;
+  color: var(--color-2a0300cb);
+}
+.register-wrapper p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-2a0300cb);
+}
+.register-wrapper h1 {
+  font-size: 52px;
+  line-height: 68px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-2a0300cb);
+}
+.register-wrapper h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  margin: 30px 0px;
+  color: var(--color-2a0300cb);
+}
+.register-wrapper h6 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-2a0300cb);
+}
+.register-wrapper i {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-ff8af9cb);
+}
+/* REGISTER ENDS HERE */
