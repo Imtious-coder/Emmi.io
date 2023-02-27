@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", sans-serif!important;
+  font-family: "Poppins", sans-serif !important;
 }
 a {
   text-decoration: none;
+}
+:root {
+  --color-8797a7: #8797a7;
+  --color-998d99: #998d99;
+  --color-ff8af9cb: #ff8af9cb;
 }
 
 .button {
@@ -98,10 +103,18 @@ a {
   background-color: #f0f0f0;
 }
 .home-wrapper-2 h5 {
-  font-size: 22px;
+  margin: 0;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 600;
   text-transform: uppercase;
-  color: grey;
+  color: var(--color-998d99);
+}
+.home-wrapper-2 i {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-ff8af9cb);
 }
 /* DETAILS ENDS HERE */
