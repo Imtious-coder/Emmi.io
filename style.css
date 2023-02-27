@@ -57,6 +57,13 @@ a {
 .pink {
   color: rgba(255, 92, 247, 0.814);
 }
+.colored-line span{
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  background: linear-gradient(45deg, rgb(255, 129, 56), rgb(255, 241, 117));
+  border-radius: 100%;
+}
 
 /* TOP SECTION */
 /*  */
