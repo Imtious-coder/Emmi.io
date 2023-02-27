@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif!important;
+}
 a {
   text-decoration: none;
 }
@@ -90,3 +93,15 @@ a {
   color: rgb(137, 137, 137);
 }
 /* TOP SECTION ENDS HERE  */
+/* DETAILS */
+.home-wrapper-2 {
+  background-color: #f0f0f0;
+}
+.home-wrapper-2 h5 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: grey;
+}
+/* DETAILS ENDS HERE */
