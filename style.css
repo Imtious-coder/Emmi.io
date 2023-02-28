@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 body {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-family: "Poppins", sans-serif !important;
 }
 a {
@@ -14,6 +17,7 @@ a {
   --color-998d99: #998d99;
   --color-ff8af9cb: #ff8af9cb;
   --color-2a0300cb: #2a0300cb;
+  --color-2a03007a: #2a03007a;
 }
 
 .button {
@@ -63,6 +67,11 @@ a {
   margin-right: 5px;
   background: linear-gradient(45deg, rgb(255, 129, 56), rgb(255, 241, 117));
   border-radius: 100%;
+}
+.colored-text {
+  background: -webkit-linear-gradient(180deg, #f2fe00, #ffac00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* TOP SECTION */
@@ -136,10 +145,11 @@ a {
 .register-wrapper p {
   font-size: 18px;
   font-weight: 600;
-  color: var(--color-2a0300cb);
+  color: var(--color-2a03007a);
 }
 .register-wrapper h1,
-.services-wrapper h1 {
+.services-wrapper h1,
+.plan-wrapper h1 {
   font-size: 52px;
   line-height: 68px;
   font-weight: 600;
@@ -152,13 +162,14 @@ a {
   line-height: 22px;
   font-weight: 500;
   margin: 30px 0px;
-  color: var(--color-2a0300cb);
+  color: var(--color-2a03007a);
 }
-.register-wrapper h6 {
-  font-size: 16px;
+.register-wrapper h6,
+.plan-wrapper h6 {
+  font-size: 15px;
   line-height: 22px;
   font-weight: 500;
-  color: var(--color-2a0300cb);
+  color: var(--color-2a03007a);
 }
 .register-wrapper i {
   font-size: 24px;
@@ -188,9 +199,52 @@ a {
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 0;
-  color: var(--color-2a0300cb);
+  font-weight: 500;
+  color: var(--color-2a03007a);
 }
 /* SERVICE WRAPPER ENDS HERE */
+
+/* PLANS */
+.plan-wrapper h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.plan-wrapper .plan-card {
+  width: 90%;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 5px 15px 20px 5px rgb(243, 236, 237);
+}
+.plan-wrapper .plan-card i {
+  background-color: white;
+  padding: 15px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: var(--color-2a0300cb);
+  border-radius: 10px;
+  box-shadow: 5px 0px 20px rgb(229, 229, 229);
+}
+.plan-wrapper .plan-card h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--color-2a0300cb);
+}
+.plan-wrapper .plan-card ul li::marker {
+  color: var(--color-ff8af9cb);
+}
+.plan-wrapper .plan-card ul li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--color-2a03007a);
+}
+/* PLANS ENDS HERE */
 
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
@@ -199,7 +253,8 @@ a {
   }
   .hero-wrapper .hero-heading,
   .register-wrapper h1,
-  .services-wrapper h1 {
+  .services-wrapper h1,
+  .plan-wrapper h1 {
     font-size: 38px;
     line-height: 52px;
   }
