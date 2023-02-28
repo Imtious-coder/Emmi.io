@@ -18,6 +18,7 @@ a {
   --color-ff8af9cb: #ff8af9cb;
   --color-2a0300cb: #2a0300cb;
   --color-2a03007a: #2a03007a;
+  --color-ededed: #ededed;
 }
 
 .button {
@@ -72,6 +73,9 @@ a {
   background: -webkit-linear-gradient(180deg, #f2fe00, #ffac00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.active {
+  color: var(--color-ededed)!important;
 }
 
 /* TOP SECTION */
@@ -246,6 +250,44 @@ a {
 }
 /* PLANS ENDS HERE */
 
+/* FOOTER */
+.footer-wrapper .container-lg {
+  border-radius: 25px;
+  background: url(images/hero-bg2.jpg) no-repeat;
+  background-size: cover;
+}
+.footer-wrapper h1 {
+  font-size: 52px;
+  font-weight: 600;
+  color: var(--color-ededed);
+}
+.footer-wrapper h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--color-ededed);
+}
+.footer-wrapper a {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: var(--color-8797a7);
+}
+.footer-wrapper a:hover{
+  color: var(--color-ededed);
+}
+.footer-wrapper i {
+  font-size: 16px;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: var(--color-8797a7);
+}
+.footer-wrapper i:hover {
+  color: var(--color-ededed);
+}
+/* FOOTER ENDS HERE */
+
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
   .hero-wrapper {
@@ -254,7 +296,8 @@ a {
   .hero-wrapper .hero-heading,
   .register-wrapper h1,
   .services-wrapper h1,
-  .plan-wrapper h1 {
+  .plan-wrapper h1,
+  .footer-wrapper h1 {
     font-size: 38px;
     line-height: 52px;
   }
