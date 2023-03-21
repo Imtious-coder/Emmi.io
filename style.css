@@ -20,6 +20,25 @@ a {
   --color-2a03007a: #2a03007a;
   --color-ededed: #ededed;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    180deg,
+    rgb(234, 74, 255),
+    rgb(253, 218, 255)
+  );
+  border-radius: 10px;
+}
 
 .button {
   outline: none;
@@ -75,7 +94,7 @@ a {
   -webkit-text-fill-color: transparent;
 }
 .active {
-  color: var(--color-ededed)!important;
+  color: var(--color-ededed) !important;
 }
 
 /* TOP SECTION */
@@ -274,7 +293,7 @@ a {
   text-decoration: none;
   color: var(--color-8797a7);
 }
-.footer-wrapper a:hover{
+.footer-wrapper a:hover {
   color: var(--color-ededed);
 }
 .footer-wrapper i {
