@@ -23,14 +23,10 @@ a {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgb(191, 191, 191);
   border-radius: 10px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(
     180deg,
@@ -39,7 +35,6 @@ a {
   );
   border-radius: 10px;
 }
-
 .button {
   outline: none;
   font-size: 14px;
